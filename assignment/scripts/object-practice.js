@@ -8,10 +8,25 @@ console.log('***** Object Practice *****')
   - Give it  a numeric 'shoeCount' property
   - Also give it an array 'favThreeFoods'
 */
+
+//let mytraits = ['Rohit', 'Repu', 'Yes','2','biryani','sambar','dosa'];
 const me = {
   // TODO - add properties here
+  firstName: 'Rohit',
+  lastName: 'Repu',
+  hasSiblings: 'Yes',
+  shoeCount: '2',
+  favThreeFoods: ['biryani','Dosa','Kheer']
 };
 console.log('A little about me:', me);
+console.log('My First Name is: '+me.firstName.toUpperCase());
+console.log('My Last Name is: '+me.lastName.toUpperCase());
+console.log('Do I have Sibilings: '+me.hasSiblings.toUpperCase());
+console.log('My Shoe Count is: '+me.shoeCount.toUpperCase());
+console.log('My Three Favorite foods are:');
+console.log(me.favThreeFoods[0]);
+console.log(me.favThreeFoods[1]);
+console.log(me.favThreeFoods[2]);
 
 /* 2. Accessing object properties.
   - Create a variable called fullName 
