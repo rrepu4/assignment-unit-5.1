@@ -9,14 +9,18 @@ console.log('***** Object Practice *****')
   - Also give it an array 'favThreeFoods'
 */
 
-//let mytraits = ['Rohit', 'Repu', 'Yes','2','biryani','sambar','dosa'];
+//let mytraits = ['Rohit', 'Repu', 'Yes','2','Biryani','Sambar','Kheer'];
 const me = {
   // TODO - add properties here
   firstName: 'Rohit',
   lastName: 'Repu',
   hasSiblings: true,
   shoeCount: 2,
-  favThreeFoods: ['biryani','Dosa','Kheer']
+  favThreeFoods: [
+    ["FirstfavFood",'Biryani'],
+    ["SecondfavFood",'Sambar'],
+    ["ThirdfavFood",'Kheer']
+  ]
 };
 console.log('A little about me:', me);
 console.log('My First Name is: '+me.firstName.toUpperCase());
@@ -24,9 +28,9 @@ console.log('My Last Name is: '+me.lastName.toUpperCase());
 console.log('Do I have Sibilings: '+me.hasSiblings);
 console.log('My Shoe Count is: '+me.shoeCount);
 console.log('My Three Favorite foods are:');
-console.log(me.favThreeFoods[0]);
-console.log(me.favThreeFoods[1]);
-console.log(me.favThreeFoods[2]);
+console.log(me.favThreeFoods[0][1]);
+console.log(me.favThreeFoods[1][1]);
+console.log(me.favThreeFoods[2][1]);
 console.log('\n');
 
 /* 2. Accessing object properties.
@@ -45,7 +49,11 @@ console.log('\n');
   - Console.log your first favorite food
   - Console.log your last favorite food 
 */
-
+console.log('My First Favotite Food is:');
+console.log(me.favThreeFoods[0][1]);
+console.log('My Last Favotite Food is:');
+console.log(me.favThreeFoods[2][1]);
+console.log('\n');
 
 
 /* 4. Change a property of an existing object.
