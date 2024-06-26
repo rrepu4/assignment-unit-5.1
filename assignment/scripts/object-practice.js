@@ -22,7 +22,7 @@ const me = {
     ["ThirdfavFood",'Kheer']
   ]
 };
-console.log('A little about me:', me);
+console.log('%c A little about me:','font-weight:bold');
 console.log('My First Name is: '+me.firstName.toUpperCase());
 console.log('My Last Name is: '+me.lastName.toUpperCase());
 console.log('Do I have Sibilings: '+me.hasSiblings);
@@ -63,7 +63,8 @@ console.log('\n');
   - Console.log your updated shoe count. 
 */
 console.log('My shoe count:', me.shoeCount);
-me.shoeCount++;
+let newShoeCount = me.shoeCount + 1;
+me.shoeCount = newShoeCount;
 console.log('My new shoe count:', me.shoeCount);
 console.log('\n');
 
@@ -73,3 +74,8 @@ console.log('\n');
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
+
+console.log('My attributes with my Favorite Color:');
+let favColor = "Red";
+me['favoriteColor'] =  favColor;
+console.log(me);
